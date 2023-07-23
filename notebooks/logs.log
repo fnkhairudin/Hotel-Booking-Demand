@@ -1,0 +1,1845 @@
+2023-07-20 21:06:38,187:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-20 21:06:38,188:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-20 21:06:38,188:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-20 21:06:38,188:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-20 21:06:45,570:INFO:PyCaret ClassificationExperiment
+2023-07-20 21:06:45,570:INFO:Logging name: clf-default-name
+2023-07-20 21:06:45,571:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2023-07-20 21:06:45,571:INFO:version 3.0.4
+2023-07-20 21:06:45,571:INFO:Initializing setup()
+2023-07-20 21:06:45,571:INFO:self.USI: bf07
+2023-07-20 21:06:45,571:INFO:self._variable_keys: {'fix_imbalance', 'seed', 'is_multiclass', 'n_jobs_param', '_available_plots', 'data', 'target_param', 'y_test', 'exp_id', 'fold_groups_param', 'X_train', 'idx', '_ml_usecase', 'USI', 'fold_generator', 'exp_name_log', 'html_param', 'log_plots_param', 'gpu_param', 'gpu_n_jobs_param', 'X_test', 'X', 'fold_shuffle_param', 'memory', 'pipeline', 'logging_param', 'y_train', 'y'}
+2023-07-20 21:06:45,571:INFO:Checking environment
+2023-07-20 21:06:45,571:INFO:python_version: 3.9.13
+2023-07-20 21:06:45,571:INFO:python_build: ('tags/v3.9.13:6de2ca5', 'May 17 2022 16:36:42')
+2023-07-20 21:06:45,571:INFO:machine: AMD64
+2023-07-20 21:06:45,571:INFO:platform: Windows-10-10.0.19045-SP0
+2023-07-20 21:06:45,574:INFO:Memory: svmem(total=17055166464, available=8749015040, percent=48.7, used=8306151424, free=8749015040)
+2023-07-20 21:06:45,575:INFO:Physical Core: 4
+2023-07-20 21:06:45,575:INFO:Logical Core: 8
+2023-07-20 21:06:45,575:INFO:Checking libraries
+2023-07-20 21:06:45,575:INFO:System:
+2023-07-20 21:06:45,575:INFO:    python: 3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]
+2023-07-20 21:06:45,575:INFO:executable: c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\python.exe
+2023-07-20 21:06:45,575:INFO:   machine: Windows-10-10.0.19045-SP0
+2023-07-20 21:06:45,575:INFO:PyCaret required dependencies:
+2023-07-20 21:06:45,577:INFO:                 pip: 22.0.4
+2023-07-20 21:06:45,577:INFO:          setuptools: 58.1.0
+2023-07-20 21:06:45,577:INFO:             pycaret: 3.0.4
+2023-07-20 21:06:45,578:INFO:             IPython: 8.13.1
+2023-07-20 21:06:45,578:INFO:          ipywidgets: 8.0.7
+2023-07-20 21:06:45,578:INFO:                tqdm: 4.65.0
+2023-07-20 21:06:45,578:INFO:               numpy: 1.23.0
+2023-07-20 21:06:45,578:INFO:              pandas: 1.5.3
+2023-07-20 21:06:45,578:INFO:              jinja2: 3.1.2
+2023-07-20 21:06:45,578:INFO:               scipy: 1.10.1
+2023-07-20 21:06:45,578:INFO:              joblib: 1.2.0
+2023-07-20 21:06:45,578:INFO:             sklearn: 1.2.2
+2023-07-20 21:06:45,578:INFO:                pyod: 1.1.0
+2023-07-20 21:06:45,578:INFO:            imblearn: 0.11.0
+2023-07-20 21:06:45,578:INFO:   category_encoders: 2.6.1
+2023-07-20 21:06:45,578:INFO:            lightgbm: 3.3.5
+2023-07-20 21:06:45,578:INFO:               numba: 0.57.1
+2023-07-20 21:06:45,578:INFO:            requests: 2.31.0
+2023-07-20 21:06:45,578:INFO:          matplotlib: 3.7.1
+2023-07-20 21:06:45,578:INFO:          scikitplot: 0.3.7
+2023-07-20 21:06:45,578:INFO:         yellowbrick: 1.5
+2023-07-20 21:06:45,578:INFO:              plotly: 5.15.0
+2023-07-20 21:06:45,578:INFO:    plotly-resampler: Not installed
+2023-07-20 21:06:45,579:INFO:             kaleido: 0.2.1
+2023-07-20 21:06:45,579:INFO:           schemdraw: 0.15
+2023-07-20 21:06:45,579:INFO:         statsmodels: 0.14.0
+2023-07-20 21:06:45,579:INFO:              sktime: 0.20.0
+2023-07-20 21:06:45,579:INFO:               tbats: 1.1.3
+2023-07-20 21:06:45,579:INFO:            pmdarima: 2.0.3
+2023-07-20 21:06:45,579:INFO:              psutil: 5.9.5
+2023-07-20 21:06:45,579:INFO:          markupsafe: 2.1.3
+2023-07-20 21:06:45,579:INFO:             pickle5: Not installed
+2023-07-20 21:06:45,579:INFO:         cloudpickle: 2.2.1
+2023-07-20 21:06:45,579:INFO:         deprecation: 2.1.0
+2023-07-20 21:06:45,579:INFO:              xxhash: 3.2.0
+2023-07-20 21:06:45,580:INFO:           wurlitzer: Not installed
+2023-07-20 21:06:45,580:INFO:PyCaret optional dependencies:
+2023-07-20 21:06:45,600:INFO:                shap: Not installed
+2023-07-20 21:06:45,600:INFO:           interpret: Not installed
+2023-07-20 21:06:45,600:INFO:                umap: Not installed
+2023-07-20 21:06:45,600:INFO:    pandas_profiling: 4.3.1
+2023-07-20 21:06:45,600:INFO:  explainerdashboard: Not installed
+2023-07-20 21:06:45,600:INFO:             autoviz: Not installed
+2023-07-20 21:06:45,600:INFO:           fairlearn: Not installed
+2023-07-20 21:06:45,600:INFO:          deepchecks: Not installed
+2023-07-20 21:06:45,600:INFO:             xgboost: Not installed
+2023-07-20 21:06:45,600:INFO:            catboost: Not installed
+2023-07-20 21:06:45,600:INFO:              kmodes: Not installed
+2023-07-20 21:06:45,600:INFO:             mlxtend: 0.22.0
+2023-07-20 21:06:45,600:INFO:       statsforecast: Not installed
+2023-07-20 21:06:45,601:INFO:        tune_sklearn: Not installed
+2023-07-20 21:06:45,601:INFO:                 ray: Not installed
+2023-07-20 21:06:45,601:INFO:            hyperopt: Not installed
+2023-07-20 21:06:45,601:INFO:              optuna: Not installed
+2023-07-20 21:06:45,601:INFO:               skopt: Not installed
+2023-07-20 21:06:45,601:INFO:              mlflow: Not installed
+2023-07-20 21:06:45,601:INFO:              gradio: Not installed
+2023-07-20 21:06:45,601:INFO:             fastapi: Not installed
+2023-07-20 21:06:45,601:INFO:             uvicorn: Not installed
+2023-07-20 21:06:45,601:INFO:              m2cgen: Not installed
+2023-07-20 21:06:45,601:INFO:           evidently: Not installed
+2023-07-20 21:06:45,601:INFO:               fugue: Not installed
+2023-07-20 21:06:45,601:INFO:           streamlit: Not installed
+2023-07-20 21:06:45,601:INFO:             prophet: Not installed
+2023-07-20 21:06:45,601:INFO:None
+2023-07-20 21:06:45,601:INFO:Set up data.
+2023-07-20 21:06:56,957:INFO:PyCaret ClassificationExperiment
+2023-07-20 21:06:56,957:INFO:Logging name: clf-default-name
+2023-07-20 21:06:56,957:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2023-07-20 21:06:56,957:INFO:version 3.0.4
+2023-07-20 21:06:56,957:INFO:Initializing setup()
+2023-07-20 21:06:56,957:INFO:self.USI: a37e
+2023-07-20 21:06:56,957:INFO:self._variable_keys: {'fix_imbalance', 'seed', 'is_multiclass', 'n_jobs_param', '_available_plots', 'data', 'target_param', 'y_test', 'exp_id', 'fold_groups_param', 'X_train', 'idx', '_ml_usecase', 'USI', 'fold_generator', 'exp_name_log', 'html_param', 'log_plots_param', 'gpu_param', 'gpu_n_jobs_param', 'X_test', 'X', 'fold_shuffle_param', 'memory', 'pipeline', 'logging_param', 'y_train', 'y'}
+2023-07-20 21:06:56,958:INFO:Checking environment
+2023-07-20 21:06:56,958:INFO:python_version: 3.9.13
+2023-07-20 21:06:56,958:INFO:python_build: ('tags/v3.9.13:6de2ca5', 'May 17 2022 16:36:42')
+2023-07-20 21:06:56,958:INFO:machine: AMD64
+2023-07-20 21:06:56,958:INFO:platform: Windows-10-10.0.19045-SP0
+2023-07-20 21:06:56,962:INFO:Memory: svmem(total=17055166464, available=8660783104, percent=49.2, used=8394383360, free=8660783104)
+2023-07-20 21:06:56,962:INFO:Physical Core: 4
+2023-07-20 21:06:56,962:INFO:Logical Core: 8
+2023-07-20 21:06:56,963:INFO:Checking libraries
+2023-07-20 21:06:56,963:INFO:System:
+2023-07-20 21:06:56,963:INFO:    python: 3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]
+2023-07-20 21:06:56,963:INFO:executable: c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\python.exe
+2023-07-20 21:06:56,964:INFO:   machine: Windows-10-10.0.19045-SP0
+2023-07-20 21:06:56,964:INFO:PyCaret required dependencies:
+2023-07-20 21:06:56,964:INFO:                 pip: 22.0.4
+2023-07-20 21:06:56,964:INFO:          setuptools: 58.1.0
+2023-07-20 21:06:56,965:INFO:             pycaret: 3.0.4
+2023-07-20 21:06:56,965:INFO:             IPython: 8.13.1
+2023-07-20 21:06:56,965:INFO:          ipywidgets: 8.0.7
+2023-07-20 21:06:56,966:INFO:                tqdm: 4.65.0
+2023-07-20 21:06:56,966:INFO:               numpy: 1.23.0
+2023-07-20 21:06:56,966:INFO:              pandas: 1.5.3
+2023-07-20 21:06:56,966:INFO:              jinja2: 3.1.2
+2023-07-20 21:06:56,966:INFO:               scipy: 1.10.1
+2023-07-20 21:06:56,967:INFO:              joblib: 1.2.0
+2023-07-20 21:06:56,967:INFO:             sklearn: 1.2.2
+2023-07-20 21:06:56,967:INFO:                pyod: 1.1.0
+2023-07-20 21:06:56,967:INFO:            imblearn: 0.11.0
+2023-07-20 21:06:56,967:INFO:   category_encoders: 2.6.1
+2023-07-20 21:06:56,967:INFO:            lightgbm: 3.3.5
+2023-07-20 21:06:56,967:INFO:               numba: 0.57.1
+2023-07-20 21:06:56,967:INFO:            requests: 2.31.0
+2023-07-20 21:06:56,967:INFO:          matplotlib: 3.7.1
+2023-07-20 21:06:56,967:INFO:          scikitplot: 0.3.7
+2023-07-20 21:06:56,967:INFO:         yellowbrick: 1.5
+2023-07-20 21:06:56,967:INFO:              plotly: 5.15.0
+2023-07-20 21:06:56,968:INFO:    plotly-resampler: Not installed
+2023-07-20 21:06:56,968:INFO:             kaleido: 0.2.1
+2023-07-20 21:06:56,968:INFO:           schemdraw: 0.15
+2023-07-20 21:06:56,968:INFO:         statsmodels: 0.14.0
+2023-07-20 21:06:56,968:INFO:              sktime: 0.20.0
+2023-07-20 21:06:56,968:INFO:               tbats: 1.1.3
+2023-07-20 21:06:56,968:INFO:            pmdarima: 2.0.3
+2023-07-20 21:06:56,968:INFO:              psutil: 5.9.5
+2023-07-20 21:06:56,968:INFO:          markupsafe: 2.1.3
+2023-07-20 21:06:56,969:INFO:             pickle5: Not installed
+2023-07-20 21:06:56,969:INFO:         cloudpickle: 2.2.1
+2023-07-20 21:06:56,969:INFO:         deprecation: 2.1.0
+2023-07-20 21:06:56,969:INFO:              xxhash: 3.2.0
+2023-07-20 21:06:56,969:INFO:           wurlitzer: Not installed
+2023-07-20 21:06:56,969:INFO:PyCaret optional dependencies:
+2023-07-20 21:06:56,969:INFO:                shap: Not installed
+2023-07-20 21:06:56,969:INFO:           interpret: Not installed
+2023-07-20 21:06:56,969:INFO:                umap: Not installed
+2023-07-20 21:06:56,969:INFO:    pandas_profiling: 4.3.1
+2023-07-20 21:06:56,970:INFO:  explainerdashboard: Not installed
+2023-07-20 21:06:56,970:INFO:             autoviz: Not installed
+2023-07-20 21:06:56,970:INFO:           fairlearn: Not installed
+2023-07-20 21:06:56,970:INFO:          deepchecks: Not installed
+2023-07-20 21:06:56,970:INFO:             xgboost: Not installed
+2023-07-20 21:06:56,970:INFO:            catboost: Not installed
+2023-07-20 21:06:56,970:INFO:              kmodes: Not installed
+2023-07-20 21:06:56,970:INFO:             mlxtend: 0.22.0
+2023-07-20 21:06:56,970:INFO:       statsforecast: Not installed
+2023-07-20 21:06:56,971:INFO:        tune_sklearn: Not installed
+2023-07-20 21:06:56,971:INFO:                 ray: Not installed
+2023-07-20 21:06:56,971:INFO:            hyperopt: Not installed
+2023-07-20 21:06:56,971:INFO:              optuna: Not installed
+2023-07-20 21:06:56,971:INFO:               skopt: Not installed
+2023-07-20 21:06:56,971:INFO:              mlflow: Not installed
+2023-07-20 21:06:56,971:INFO:              gradio: Not installed
+2023-07-20 21:06:56,971:INFO:             fastapi: Not installed
+2023-07-20 21:06:56,971:INFO:             uvicorn: Not installed
+2023-07-20 21:06:56,971:INFO:              m2cgen: Not installed
+2023-07-20 21:06:56,971:INFO:           evidently: Not installed
+2023-07-20 21:06:56,972:INFO:               fugue: Not installed
+2023-07-20 21:06:56,972:INFO:           streamlit: Not installed
+2023-07-20 21:06:56,972:INFO:             prophet: Not installed
+2023-07-20 21:06:56,972:INFO:None
+2023-07-20 21:06:56,972:INFO:Set up data.
+2023-07-20 21:06:57,056:INFO:Set up train/test split.
+2023-07-20 21:06:57,119:INFO:Set up index.
+2023-07-20 21:06:57,122:INFO:Set up folding strategy.
+2023-07-20 21:06:57,123:INFO:Assigning column types.
+2023-07-20 21:06:57,134:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2023-07-20 21:06:57,219:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-07-20 21:06:57,231:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-07-20 21:06:57,351:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 21:06:57,515:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 21:06:57,582:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-07-20 21:06:57,584:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-07-20 21:06:57,630:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 21:06:57,631:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 21:06:57,631:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2023-07-20 21:06:57,703:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-07-20 21:06:57,756:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 21:06:57,756:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 21:06:57,829:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2023-07-20 21:06:57,860:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 21:06:57,860:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 21:06:57,861:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2023-07-20 21:06:57,957:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 21:06:57,958:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 21:06:58,072:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 21:06:58,072:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 21:06:58,075:INFO:Preparing preprocessing pipeline...
+2023-07-20 21:06:58,086:INFO:Set up simple imputation.
+2023-07-20 21:06:58,098:INFO:Set up encoding of categorical features.
+2023-07-20 21:06:58,098:INFO:Set up removing multicollinearity.
+2023-07-20 21:06:58,098:INFO:Set up removing outliers.
+2023-07-20 21:06:58,098:INFO:Set up imbalanced handling.
+2023-07-20 21:06:58,098:INFO:Set up feature normalization.
+2023-07-20 21:07:09,610:INFO:Finished creating preprocessing pipeline.
+2023-07-20 21:07:09,636:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\faisa\AppData\Local\Temp\joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['previous_cancellations',
+                                             'booking_changes',
+                                             'days_in_waiting_list',
+                                             'required_car_parking_spaces',
+                                             'total_of_special_requests'],
+                                    transformer=SimpleImputer(add_indicator=False,
+                                                              copy=True,
+                                                              fill_value=None,
+                                                              keep_e...
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=FixImbalancer(estimator=SMOTE(k_neighbors=5,
+                                                                              n_jobs=None,
+                                                                              random_state=None,
+                                                                              sampling_strategy='auto')))),
+                ('normalize',
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=RobustScaler(copy=True,
+                                                             quantile_range=(25.0,
+                                                                             75.0),
+                                                             unit_variance=False,
+                                                             with_centering=True,
+                                                             with_scaling=True)))],
+         verbose=False)
+2023-07-20 21:07:09,637:INFO:Creating final display dataframe.
+2023-07-20 21:07:21,153:INFO:Setup _display_container:                     Description             Value
+0                    Session id              2020
+1                        Target       is_canceled
+2                   Target type            Binary
+3           Original data shape       (62679, 11)
+4        Transformed data shape       (72568, 31)
+5   Transformed train set shape       (60032, 31)
+6    Transformed test set shape       (12536, 31)
+7              Numeric features                 5
+8          Categorical features                 5
+9      Rows with missing values              0.4%
+10                   Preprocess              True
+11              Imputation type            simple
+12           Numeric imputation              mean
+13       Categorical imputation              mode
+14     Maximum one-hot encoding                25
+15              Encoding method              None
+16     Remove multicollinearity              True
+17  Multicollinearity threshold               0.8
+18              Remove outliers              True
+19           Outliers threshold              0.05
+20                Fix imbalance              True
+21         Fix imbalance method             SMOTE
+22                    Normalize              True
+23             Normalize method            robust
+24               Fold Generator   StratifiedKFold
+25                  Fold Number                10
+26                     CPU Jobs                -1
+27                      Use GPU             False
+28               Log Experiment             False
+29              Experiment Name  clf-default-name
+30                          USI              a37e
+2023-07-20 21:07:21,360:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 21:07:21,360:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 21:07:21,487:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 21:07:21,487:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-07-20 21:07:21,488:INFO:setup() successfully completed in 25.06s...............
+2023-07-20 21:07:57,427:INFO:Initializing compare_models()
+2023-07-20 21:07:57,427:INFO:compare_models(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018DFB017F10>, include=None, fold=None, round=4, cross_validation=True, sort=Accuracy, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.classification.oop.ClassificationExperiment object at 0x0000018DFB017F10>, 'include': None, 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'Accuracy', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'groups': None, 'experiment_custom_tags': None, 'probability_threshold': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.classification.oop.ClassificationExperiment'>}, exclude=None)
+2023-07-20 21:07:57,428:INFO:Checking exceptions
+2023-07-20 21:07:57,448:INFO:Preparing display monitor
+2023-07-20 21:07:57,540:INFO:Initializing Logistic Regression
+2023-07-20 21:07:57,540:INFO:Total runtime is 0.0 minutes
+2023-07-20 21:07:57,555:INFO:SubProcess create_model() called ==================================
+2023-07-20 21:07:57,556:INFO:Initializing create_model()
+2023-07-20 21:07:57,556:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018DFB017F10>, estimator=lr, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000018DE62B06A0>, model_only=True, return_train_score=False, kwargs={})
+2023-07-20 21:07:57,557:INFO:Checking exceptions
+2023-07-20 21:07:57,557:INFO:Importing libraries
+2023-07-20 21:07:57,557:INFO:Copying training dataset
+2023-07-20 21:07:57,610:INFO:Defining folds
+2023-07-20 21:07:57,610:INFO:Declaring metric variables
+2023-07-20 21:07:57,624:INFO:Importing untrained model
+2023-07-20 21:07:57,638:INFO:Logistic Regression Imported successfully
+2023-07-20 21:07:57,661:INFO:Starting cross validation
+2023-07-20 21:07:57,683:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-07-20 21:09:51,829:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.50s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 21:09:52,518:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.50s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 21:10:34,233:INFO:Calculating mean and std
+2023-07-20 21:10:34,236:INFO:Creating metrics dataframe
+2023-07-20 21:10:35,101:INFO:Uploading results into container
+2023-07-20 21:10:35,102:INFO:Uploading model into container now
+2023-07-20 21:10:35,103:INFO:_master_model_container: 1
+2023-07-20 21:10:35,103:INFO:_display_container: 2
+2023-07-20 21:10:35,104:INFO:LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=1000,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=2020, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)
+2023-07-20 21:10:35,104:INFO:create_model() successfully completed......................................
+2023-07-20 21:10:35,225:INFO:SubProcess create_model() end ==================================
+2023-07-20 21:10:35,225:INFO:Creating metrics dataframe
+2023-07-20 21:10:35,242:INFO:Initializing K Neighbors Classifier
+2023-07-20 21:10:35,242:INFO:Total runtime is 2.6283612926801045 minutes
+2023-07-20 21:10:35,249:INFO:SubProcess create_model() called ==================================
+2023-07-20 21:10:35,250:INFO:Initializing create_model()
+2023-07-20 21:10:35,250:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018DFB017F10>, estimator=knn, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000018DE62B06A0>, model_only=True, return_train_score=False, kwargs={})
+2023-07-20 21:10:35,250:INFO:Checking exceptions
+2023-07-20 21:10:35,250:INFO:Importing libraries
+2023-07-20 21:10:35,250:INFO:Copying training dataset
+2023-07-20 21:10:35,281:INFO:Defining folds
+2023-07-20 21:10:35,281:INFO:Declaring metric variables
+2023-07-20 21:10:35,288:INFO:Importing untrained model
+2023-07-20 21:10:35,298:INFO:K Neighbors Classifier Imported successfully
+2023-07-20 21:10:35,319:INFO:Starting cross validation
+2023-07-20 21:10:35,343:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-07-20 21:10:40,911:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.52s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 21:11:15,683:INFO:Calculating mean and std
+2023-07-20 21:11:15,686:INFO:Creating metrics dataframe
+2023-07-20 21:11:16,443:INFO:Uploading results into container
+2023-07-20 21:11:16,444:INFO:Uploading model into container now
+2023-07-20 21:11:16,446:INFO:_master_model_container: 2
+2023-07-20 21:11:16,446:INFO:_display_container: 2
+2023-07-20 21:11:16,447:INFO:KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+                     metric_params=None, n_jobs=-1, n_neighbors=5, p=2,
+                     weights='uniform')
+2023-07-20 21:11:16,448:INFO:create_model() successfully completed......................................
+2023-07-20 21:11:16,564:INFO:SubProcess create_model() end ==================================
+2023-07-20 21:11:16,564:INFO:Creating metrics dataframe
+2023-07-20 21:11:16,584:INFO:Initializing Naive Bayes
+2023-07-20 21:11:16,585:INFO:Total runtime is 3.3174035708109537 minutes
+2023-07-20 21:11:16,594:INFO:SubProcess create_model() called ==================================
+2023-07-20 21:11:16,595:INFO:Initializing create_model()
+2023-07-20 21:11:16,595:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018DFB017F10>, estimator=nb, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000018DE62B06A0>, model_only=True, return_train_score=False, kwargs={})
+2023-07-20 21:11:16,596:INFO:Checking exceptions
+2023-07-20 21:11:16,596:INFO:Importing libraries
+2023-07-20 21:11:16,596:INFO:Copying training dataset
+2023-07-20 21:11:16,633:INFO:Defining folds
+2023-07-20 21:11:16,634:INFO:Declaring metric variables
+2023-07-20 21:11:16,647:INFO:Importing untrained model
+2023-07-20 21:11:16,658:INFO:Naive Bayes Imported successfully
+2023-07-20 21:11:16,682:INFO:Starting cross validation
+2023-07-20 21:11:16,699:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-07-20 21:11:26,353:INFO:Calculating mean and std
+2023-07-20 21:11:26,355:INFO:Creating metrics dataframe
+2023-07-20 21:11:27,140:INFO:Uploading results into container
+2023-07-20 21:11:27,142:INFO:Uploading model into container now
+2023-07-20 21:11:27,143:INFO:_master_model_container: 3
+2023-07-20 21:11:27,143:INFO:_display_container: 2
+2023-07-20 21:11:27,144:INFO:GaussianNB(priors=None, var_smoothing=1e-09)
+2023-07-20 21:11:27,144:INFO:create_model() successfully completed......................................
+2023-07-20 21:11:27,253:INFO:SubProcess create_model() end ==================================
+2023-07-20 21:11:27,253:INFO:Creating metrics dataframe
+2023-07-20 21:11:27,273:INFO:Initializing Decision Tree Classifier
+2023-07-20 21:11:27,274:INFO:Total runtime is 3.4955371379852296 minutes
+2023-07-20 21:11:27,285:INFO:SubProcess create_model() called ==================================
+2023-07-20 21:11:27,285:INFO:Initializing create_model()
+2023-07-20 21:11:27,286:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018DFB017F10>, estimator=dt, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000018DE62B06A0>, model_only=True, return_train_score=False, kwargs={})
+2023-07-20 21:11:27,286:INFO:Checking exceptions
+2023-07-20 21:11:27,286:INFO:Importing libraries
+2023-07-20 21:11:27,286:INFO:Copying training dataset
+2023-07-20 21:11:27,323:INFO:Defining folds
+2023-07-20 21:11:27,323:INFO:Declaring metric variables
+2023-07-20 21:11:27,337:INFO:Importing untrained model
+2023-07-20 21:11:27,348:INFO:Decision Tree Classifier Imported successfully
+2023-07-20 21:11:27,368:INFO:Starting cross validation
+2023-07-20 21:11:27,383:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-07-20 21:11:37,118:INFO:Calculating mean and std
+2023-07-20 21:11:37,119:INFO:Creating metrics dataframe
+2023-07-20 21:11:37,942:INFO:Uploading results into container
+2023-07-20 21:11:37,944:INFO:Uploading model into container now
+2023-07-20 21:11:37,945:INFO:_master_model_container: 4
+2023-07-20 21:11:37,946:INFO:_display_container: 2
+2023-07-20 21:11:37,947:INFO:DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
+                       max_depth=None, max_features=None, max_leaf_nodes=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       random_state=2020, splitter='best')
+2023-07-20 21:11:37,947:INFO:create_model() successfully completed......................................
+2023-07-20 21:11:38,050:INFO:SubProcess create_model() end ==================================
+2023-07-20 21:11:38,050:INFO:Creating metrics dataframe
+2023-07-20 21:11:38,073:INFO:Initializing SVM - Linear Kernel
+2023-07-20 21:11:38,073:INFO:Total runtime is 3.675537085533142 minutes
+2023-07-20 21:11:38,083:INFO:SubProcess create_model() called ==================================
+2023-07-20 21:11:38,084:INFO:Initializing create_model()
+2023-07-20 21:11:38,084:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018DFB017F10>, estimator=svm, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000018DE62B06A0>, model_only=True, return_train_score=False, kwargs={})
+2023-07-20 21:11:38,084:INFO:Checking exceptions
+2023-07-20 21:11:38,084:INFO:Importing libraries
+2023-07-20 21:11:38,085:INFO:Copying training dataset
+2023-07-20 21:11:38,121:INFO:Defining folds
+2023-07-20 21:11:38,122:INFO:Declaring metric variables
+2023-07-20 21:11:38,138:INFO:Importing untrained model
+2023-07-20 21:11:38,149:INFO:SVM - Linear Kernel Imported successfully
+2023-07-20 21:11:38,173:INFO:Starting cross validation
+2023-07-20 21:11:38,190:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-07-20 21:11:42,595:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\utils\_available_if.py", line 32, in __get__
+    if not self.check(obj):
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\linear_model\_stochastic_gradient.py", line 1235, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2023-07-20 21:11:42,653:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\utils\_available_if.py", line 32, in __get__
+    if not self.check(obj):
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\linear_model\_stochastic_gradient.py", line 1235, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2023-07-20 21:11:42,665:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\utils\_available_if.py", line 32, in __get__
+    if not self.check(obj):
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\linear_model\_stochastic_gradient.py", line 1235, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2023-07-20 21:11:42,972:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\utils\_available_if.py", line 32, in __get__
+    if not self.check(obj):
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\linear_model\_stochastic_gradient.py", line 1235, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2023-07-20 21:11:42,975:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\utils\_available_if.py", line 32, in __get__
+    if not self.check(obj):
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\linear_model\_stochastic_gradient.py", line 1235, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2023-07-20 21:11:43,085:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\utils\_available_if.py", line 32, in __get__
+    if not self.check(obj):
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\linear_model\_stochastic_gradient.py", line 1235, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2023-07-20 21:11:43,179:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\utils\_available_if.py", line 32, in __get__
+    if not self.check(obj):
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\linear_model\_stochastic_gradient.py", line 1235, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2023-07-20 21:11:43,353:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\utils\_available_if.py", line 32, in __get__
+    if not self.check(obj):
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\linear_model\_stochastic_gradient.py", line 1235, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2023-07-20 21:11:47,617:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\utils\_available_if.py", line 32, in __get__
+    if not self.check(obj):
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\linear_model\_stochastic_gradient.py", line 1235, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2023-07-20 21:11:47,968:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\utils\_available_if.py", line 32, in __get__
+    if not self.check(obj):
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\linear_model\_stochastic_gradient.py", line 1235, in _check_proba
+    raise AttributeError(
+AttributeError: probability estimates are not available for loss='hinge'
+
+  warnings.warn(
+
+2023-07-20 21:11:49,964:INFO:Calculating mean and std
+2023-07-20 21:11:49,965:INFO:Creating metrics dataframe
+2023-07-20 21:11:50,822:INFO:Uploading results into container
+2023-07-20 21:11:50,823:INFO:Uploading model into container now
+2023-07-20 21:11:50,824:INFO:_master_model_container: 5
+2023-07-20 21:11:50,824:INFO:_display_container: 2
+2023-07-20 21:11:50,824:INFO:SGDClassifier(alpha=0.0001, average=False, class_weight=None,
+              early_stopping=False, epsilon=0.1, eta0=0.001, fit_intercept=True,
+              l1_ratio=0.15, learning_rate='optimal', loss='hinge',
+              max_iter=1000, n_iter_no_change=5, n_jobs=-1, penalty='l2',
+              power_t=0.5, random_state=2020, shuffle=True, tol=0.001,
+              validation_fraction=0.1, verbose=0, warm_start=False)
+2023-07-20 21:11:50,825:INFO:create_model() successfully completed......................................
+2023-07-20 21:11:50,919:INFO:SubProcess create_model() end ==================================
+2023-07-20 21:11:50,919:INFO:Creating metrics dataframe
+2023-07-20 21:11:50,941:INFO:Initializing Ridge Classifier
+2023-07-20 21:11:50,941:INFO:Total runtime is 3.8900036811828613 minutes
+2023-07-20 21:11:50,951:INFO:SubProcess create_model() called ==================================
+2023-07-20 21:11:50,952:INFO:Initializing create_model()
+2023-07-20 21:11:50,952:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018DFB017F10>, estimator=ridge, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000018DE62B06A0>, model_only=True, return_train_score=False, kwargs={})
+2023-07-20 21:11:50,952:INFO:Checking exceptions
+2023-07-20 21:11:50,952:INFO:Importing libraries
+2023-07-20 21:11:50,952:INFO:Copying training dataset
+2023-07-20 21:11:50,985:INFO:Defining folds
+2023-07-20 21:11:50,985:INFO:Declaring metric variables
+2023-07-20 21:11:50,997:INFO:Importing untrained model
+2023-07-20 21:11:51,007:INFO:Ridge Classifier Imported successfully
+2023-07-20 21:11:51,028:INFO:Starting cross validation
+2023-07-20 21:11:51,046:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-07-20 21:11:53,471:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.51s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-07-20 21:11:53,579:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.75s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-07-20 21:11:53,631:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.64s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-07-20 21:11:53,786:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.53s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-07-20 21:11:53,790:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.67s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-07-20 21:11:54,591:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2023-07-20 21:11:54,632:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2023-07-20 21:11:54,655:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2023-07-20 21:11:54,723:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2023-07-20 21:11:54,843:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2023-07-20 21:11:54,874:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2023-07-20 21:11:54,899:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2023-07-20 21:11:54,974:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2023-07-20 21:11:58,568:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2023-07-20 21:11:59,086:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py:138: FitFailedWarning: Metric 'make_scorer(roc_auc_score, needs_proba=True, error_score=0.0, average=weighted, multi_class=ovr)' failed and error score 0.0 has been returned instead. If this is a custom metric, this usually means that the error is in the metric code. Full exception below:
+Traceback (most recent call last):
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 76, in _cached_call
+    return cache[method]
+KeyError: 'predict_proba'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\metrics.py", line 130, in _score
+    return super()._score(
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 316, in _score
+    y_pred = method_caller(clf, "predict_proba", X)
+  File "c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_scorer.py", line 78, in _cached_call
+    result = getattr(estimator, method)(*args, **kwargs)
+  File "C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py", line 121, in __getattr__
+    return getattr(self._final_estimator, name)
+AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
+
+  warnings.warn(
+
+2023-07-20 21:12:02,563:INFO:Calculating mean and std
+2023-07-20 21:12:02,564:INFO:Creating metrics dataframe
+2023-07-20 21:12:03,523:INFO:Uploading results into container
+2023-07-20 21:12:03,524:INFO:Uploading model into container now
+2023-07-20 21:12:03,525:INFO:_master_model_container: 6
+2023-07-20 21:12:03,525:INFO:_display_container: 2
+2023-07-20 21:12:03,526:INFO:RidgeClassifier(alpha=1.0, class_weight=None, copy_X=True, fit_intercept=True,
+                max_iter=None, positive=False, random_state=2020, solver='auto',
+                tol=0.0001)
+2023-07-20 21:12:03,526:INFO:create_model() successfully completed......................................
+2023-07-20 21:12:03,637:INFO:SubProcess create_model() end ==================================
+2023-07-20 21:12:03,637:INFO:Creating metrics dataframe
+2023-07-20 21:12:03,659:INFO:Initializing Random Forest Classifier
+2023-07-20 21:12:03,660:INFO:Total runtime is 4.101995873451233 minutes
+2023-07-20 21:12:03,668:INFO:SubProcess create_model() called ==================================
+2023-07-20 21:12:03,670:INFO:Initializing create_model()
+2023-07-20 21:12:03,670:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018DFB017F10>, estimator=rf, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000018DE62B06A0>, model_only=True, return_train_score=False, kwargs={})
+2023-07-20 21:12:03,670:INFO:Checking exceptions
+2023-07-20 21:12:03,670:INFO:Importing libraries
+2023-07-20 21:12:03,670:INFO:Copying training dataset
+2023-07-20 21:12:03,706:INFO:Defining folds
+2023-07-20 21:12:03,706:INFO:Declaring metric variables
+2023-07-20 21:12:03,723:INFO:Importing untrained model
+2023-07-20 21:12:03,736:INFO:Random Forest Classifier Imported successfully
+2023-07-20 21:12:03,760:INFO:Starting cross validation
+2023-07-20 21:12:03,782:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-07-20 21:12:26,238:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 3.89s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-07-20 21:12:26,459:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 3.80s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-07-20 21:12:27,220:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.70s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-07-20 21:12:27,585:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.78s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-07-20 21:12:27,661:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.62s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-07-20 21:12:27,705:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.62s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-07-20 21:12:27,761:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.71s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-07-20 21:12:27,853:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.72s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-07-20 21:12:27,998:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.76s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 21:12:28,137:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.66s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 21:12:28,919:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.90s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 21:12:29,660:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.96s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 21:12:29,776:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 1.04s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 21:12:29,965:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 1.07s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 21:12:30,089:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 1.12s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 21:12:30,092:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 1.07s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 21:12:43,624:INFO:Calculating mean and std
+2023-07-20 21:12:43,626:INFO:Creating metrics dataframe
+2023-07-20 21:12:44,535:INFO:Uploading results into container
+2023-07-20 21:12:44,536:INFO:Uploading model into container now
+2023-07-20 21:12:44,537:INFO:_master_model_container: 7
+2023-07-20 21:12:44,537:INFO:_display_container: 2
+2023-07-20 21:12:44,538:INFO:RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       n_estimators=100, n_jobs=-1, oob_score=False,
+                       random_state=2020, verbose=0, warm_start=False)
+2023-07-20 21:12:44,538:INFO:create_model() successfully completed......................................
+2023-07-20 21:12:44,649:INFO:SubProcess create_model() end ==================================
+2023-07-20 21:12:44,649:INFO:Creating metrics dataframe
+2023-07-20 21:12:44,672:INFO:Initializing Quadratic Discriminant Analysis
+2023-07-20 21:12:44,672:INFO:Total runtime is 4.785529510180155 minutes
+2023-07-20 21:12:44,678:INFO:SubProcess create_model() called ==================================
+2023-07-20 21:12:44,679:INFO:Initializing create_model()
+2023-07-20 21:12:44,681:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018DFB017F10>, estimator=qda, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000018DE62B06A0>, model_only=True, return_train_score=False, kwargs={})
+2023-07-20 21:12:44,681:INFO:Checking exceptions
+2023-07-20 21:12:44,682:INFO:Importing libraries
+2023-07-20 21:12:44,682:INFO:Copying training dataset
+2023-07-20 21:12:44,721:INFO:Defining folds
+2023-07-20 21:12:44,721:INFO:Declaring metric variables
+2023-07-20 21:12:44,737:INFO:Importing untrained model
+2023-07-20 21:12:44,749:INFO:Quadratic Discriminant Analysis Imported successfully
+2023-07-20 21:12:44,771:INFO:Starting cross validation
+2023-07-20 21:12:44,790:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-07-20 21:12:46,608:WARNING:c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-07-20 21:12:46,634:WARNING:c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-07-20 21:12:46,651:WARNING:c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-07-20 21:12:46,732:WARNING:c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-07-20 21:12:46,782:WARNING:c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-07-20 21:12:46,940:WARNING:c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-07-20 21:12:47,026:WARNING:c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-07-20 21:12:47,201:WARNING:c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-07-20 21:12:52,054:WARNING:c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-07-20 21:12:52,105:WARNING:c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\discriminant_analysis.py:926: UserWarning: Variables are collinear
+  warnings.warn("Variables are collinear")
+
+2023-07-20 21:12:57,019:INFO:Calculating mean and std
+2023-07-20 21:12:57,021:INFO:Creating metrics dataframe
+2023-07-20 21:12:57,932:INFO:Uploading results into container
+2023-07-20 21:12:57,933:INFO:Uploading model into container now
+2023-07-20 21:12:57,934:INFO:_master_model_container: 8
+2023-07-20 21:12:57,935:INFO:_display_container: 2
+2023-07-20 21:12:57,935:INFO:QuadraticDiscriminantAnalysis(priors=None, reg_param=0.0,
+                              store_covariance=False, tol=0.0001)
+2023-07-20 21:12:57,936:INFO:create_model() successfully completed......................................
+2023-07-20 21:12:58,051:INFO:SubProcess create_model() end ==================================
+2023-07-20 21:12:58,052:INFO:Creating metrics dataframe
+2023-07-20 21:12:58,077:INFO:Initializing Ada Boost Classifier
+2023-07-20 21:12:58,077:INFO:Total runtime is 5.008946788311005 minutes
+2023-07-20 21:12:58,087:INFO:SubProcess create_model() called ==================================
+2023-07-20 21:12:58,088:INFO:Initializing create_model()
+2023-07-20 21:12:58,088:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018DFB017F10>, estimator=ada, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000018DE62B06A0>, model_only=True, return_train_score=False, kwargs={})
+2023-07-20 21:12:58,089:INFO:Checking exceptions
+2023-07-20 21:12:58,089:INFO:Importing libraries
+2023-07-20 21:12:58,089:INFO:Copying training dataset
+2023-07-20 21:12:58,128:INFO:Defining folds
+2023-07-20 21:12:58,129:INFO:Declaring metric variables
+2023-07-20 21:12:58,139:INFO:Importing untrained model
+2023-07-20 21:12:58,155:INFO:Ada Boost Classifier Imported successfully
+2023-07-20 21:12:58,176:INFO:Starting cross validation
+2023-07-20 21:12:58,193:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-07-20 21:13:09,880:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.51s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-07-20 21:13:10,429:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.53s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 21:13:10,479:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.59s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 21:13:10,488:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.53s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 21:13:10,777:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.57s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 21:13:10,830:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.54s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 21:13:11,098:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.53s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 21:13:11,172:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.63s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 21:13:21,126:INFO:Calculating mean and std
+2023-07-20 21:13:21,129:INFO:Creating metrics dataframe
+2023-07-20 21:13:22,143:INFO:Uploading results into container
+2023-07-20 21:13:22,145:INFO:Uploading model into container now
+2023-07-20 21:13:22,145:INFO:_master_model_container: 9
+2023-07-20 21:13:22,146:INFO:_display_container: 2
+2023-07-20 21:13:22,147:INFO:AdaBoostClassifier(algorithm='SAMME.R', base_estimator='deprecated',
+                   estimator=None, learning_rate=1.0, n_estimators=50,
+                   random_state=2020)
+2023-07-20 21:13:22,147:INFO:create_model() successfully completed......................................
+2023-07-20 21:13:22,249:INFO:SubProcess create_model() end ==================================
+2023-07-20 21:13:22,250:INFO:Creating metrics dataframe
+2023-07-20 21:13:22,273:INFO:Initializing Gradient Boosting Classifier
+2023-07-20 21:13:22,273:INFO:Total runtime is 5.412212550640106 minutes
+2023-07-20 21:13:22,281:INFO:SubProcess create_model() called ==================================
+2023-07-20 21:13:22,282:INFO:Initializing create_model()
+2023-07-20 21:13:22,282:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018DFB017F10>, estimator=gbc, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000018DE62B06A0>, model_only=True, return_train_score=False, kwargs={})
+2023-07-20 21:13:22,282:INFO:Checking exceptions
+2023-07-20 21:13:22,282:INFO:Importing libraries
+2023-07-20 21:13:22,283:INFO:Copying training dataset
+2023-07-20 21:13:22,333:INFO:Defining folds
+2023-07-20 21:13:22,334:INFO:Declaring metric variables
+2023-07-20 21:13:22,346:INFO:Importing untrained model
+2023-07-20 21:13:22,358:INFO:Gradient Boosting Classifier Imported successfully
+2023-07-20 21:13:22,379:INFO:Starting cross validation
+2023-07-20 21:13:22,401:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-07-20 21:13:50,792:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.65s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-07-20 21:13:50,905:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.66s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-07-20 21:13:51,069:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.59s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-07-20 21:13:51,192:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.69s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-07-20 21:13:51,300:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.65s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-07-20 21:13:51,323:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.55s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-07-20 21:13:51,410:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.54s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-07-20 21:13:51,701:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.67s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-07-20 21:13:52,337:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.67s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 21:13:52,431:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.68s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 21:13:52,655:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.76s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 21:13:52,728:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.72s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 21:13:52,753:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.65s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 21:13:52,923:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.71s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 21:13:53,054:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.83s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 21:13:53,525:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.88s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 21:14:11,641:INFO:Calculating mean and std
+2023-07-20 21:14:11,643:INFO:Creating metrics dataframe
+2023-07-20 21:14:12,694:INFO:Uploading results into container
+2023-07-20 21:14:12,696:INFO:Uploading model into container now
+2023-07-20 21:14:12,697:INFO:_master_model_container: 10
+2023-07-20 21:14:12,697:INFO:_display_container: 2
+2023-07-20 21:14:12,698:INFO:GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='log_loss', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=2020, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False)
+2023-07-20 21:14:12,698:INFO:create_model() successfully completed......................................
+2023-07-20 21:14:12,818:INFO:SubProcess create_model() end ==================================
+2023-07-20 21:14:12,818:INFO:Creating metrics dataframe
+2023-07-20 21:14:12,849:INFO:Initializing Linear Discriminant Analysis
+2023-07-20 21:14:12,850:INFO:Total runtime is 6.255163737138112 minutes
+2023-07-20 21:14:12,861:INFO:SubProcess create_model() called ==================================
+2023-07-20 21:14:12,862:INFO:Initializing create_model()
+2023-07-20 21:14:12,862:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018DFB017F10>, estimator=lda, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000018DE62B06A0>, model_only=True, return_train_score=False, kwargs={})
+2023-07-20 21:14:12,862:INFO:Checking exceptions
+2023-07-20 21:14:12,862:INFO:Importing libraries
+2023-07-20 21:14:12,862:INFO:Copying training dataset
+2023-07-20 21:14:12,907:INFO:Defining folds
+2023-07-20 21:14:12,909:INFO:Declaring metric variables
+2023-07-20 21:14:12,922:INFO:Importing untrained model
+2023-07-20 21:14:12,933:INFO:Linear Discriminant Analysis Imported successfully
+2023-07-20 21:14:12,956:INFO:Starting cross validation
+2023-07-20 21:14:12,978:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-07-20 21:14:27,022:INFO:Calculating mean and std
+2023-07-20 21:14:27,023:INFO:Creating metrics dataframe
+2023-07-20 21:14:28,097:INFO:Uploading results into container
+2023-07-20 21:14:28,098:INFO:Uploading model into container now
+2023-07-20 21:14:28,099:INFO:_master_model_container: 11
+2023-07-20 21:14:28,099:INFO:_display_container: 2
+2023-07-20 21:14:28,099:INFO:LinearDiscriminantAnalysis(covariance_estimator=None, n_components=None,
+                           priors=None, shrinkage=None, solver='svd',
+                           store_covariance=False, tol=0.0001)
+2023-07-20 21:14:28,100:INFO:create_model() successfully completed......................................
+2023-07-20 21:14:28,212:INFO:SubProcess create_model() end ==================================
+2023-07-20 21:14:28,212:INFO:Creating metrics dataframe
+2023-07-20 21:14:28,243:INFO:Initializing Extra Trees Classifier
+2023-07-20 21:14:28,243:INFO:Total runtime is 6.511713965733845 minutes
+2023-07-20 21:14:28,254:INFO:SubProcess create_model() called ==================================
+2023-07-20 21:14:28,255:INFO:Initializing create_model()
+2023-07-20 21:14:28,256:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018DFB017F10>, estimator=et, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000018DE62B06A0>, model_only=True, return_train_score=False, kwargs={})
+2023-07-20 21:14:28,256:INFO:Checking exceptions
+2023-07-20 21:14:28,256:INFO:Importing libraries
+2023-07-20 21:14:28,256:INFO:Copying training dataset
+2023-07-20 21:14:28,299:INFO:Defining folds
+2023-07-20 21:14:28,300:INFO:Declaring metric variables
+2023-07-20 21:14:28,314:INFO:Importing untrained model
+2023-07-20 21:14:28,330:INFO:Extra Trees Classifier Imported successfully
+2023-07-20 21:14:28,364:INFO:Starting cross validation
+2023-07-20 21:14:28,391:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-07-20 21:14:56,729:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 2.74s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-07-20 21:14:56,792:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 3.67s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-07-20 21:14:57,533:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.75s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-07-20 21:14:57,929:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.69s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-07-20 21:14:58,020:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.82s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-07-20 21:14:58,104:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.76s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-07-20 21:14:58,344:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 1.00s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-07-20 21:14:58,450:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 1.15s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-07-20 21:14:58,692:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.95s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 21:14:58,712:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.95s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 21:14:59,718:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.98s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 21:15:00,296:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 1.10s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 21:15:00,412:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 1.10s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 21:15:00,740:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 1.32s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 21:15:00,990:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 1.32s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 21:15:01,065:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 1.38s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 21:15:14,146:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:260: UserWarning: Persisting input arguments took 0.65s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  fitted_estimator = self._memory_fit(
+
+2023-07-20 21:15:15,658:WARNING:C:\Users\faisa\AppData\Roaming\Python\Python39\site-packages\pycaret\internal\pipeline.py:310: UserWarning: Persisting input arguments took 0.51s to run.
+If this happens often in your code, it can cause performance problems 
+(results will be correct in all cases). 
+The reason for this is probably some large input arguments for a wrapped
+ function (e.g. large strings).
+THIS IS A JOBLIB ISSUE. If you can, kindly provide the joblib's team with an
+ example so that they can fix the problem.
+  X, _ = self._memory_full_transform(self, X, None, with_final=False)
+
+2023-07-20 21:15:19,194:INFO:Calculating mean and std
+2023-07-20 21:15:19,196:INFO:Creating metrics dataframe
+2023-07-20 21:15:20,262:INFO:Uploading results into container
+2023-07-20 21:15:20,264:INFO:Uploading model into container now
+2023-07-20 21:15:20,264:INFO:_master_model_container: 12
+2023-07-20 21:15:20,265:INFO:_display_container: 2
+2023-07-20 21:15:20,266:INFO:ExtraTreesClassifier(bootstrap=False, ccp_alpha=0.0, class_weight=None,
+                     criterion='gini', max_depth=None, max_features='sqrt',
+                     max_leaf_nodes=None, max_samples=None,
+                     min_impurity_decrease=0.0, min_samples_leaf=1,
+                     min_samples_split=2, min_weight_fraction_leaf=0.0,
+                     n_estimators=100, n_jobs=-1, oob_score=False,
+                     random_state=2020, verbose=0, warm_start=False)
+2023-07-20 21:15:20,266:INFO:create_model() successfully completed......................................
+2023-07-20 21:15:20,380:INFO:SubProcess create_model() end ==================================
+2023-07-20 21:15:20,380:INFO:Creating metrics dataframe
+2023-07-20 21:15:20,407:INFO:Initializing Light Gradient Boosting Machine
+2023-07-20 21:15:20,407:INFO:Total runtime is 7.381111188729603 minutes
+2023-07-20 21:15:20,415:INFO:SubProcess create_model() called ==================================
+2023-07-20 21:15:20,415:INFO:Initializing create_model()
+2023-07-20 21:15:20,415:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018DFB017F10>, estimator=lightgbm, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000018DE62B06A0>, model_only=True, return_train_score=False, kwargs={})
+2023-07-20 21:15:20,416:INFO:Checking exceptions
+2023-07-20 21:15:20,416:INFO:Importing libraries
+2023-07-20 21:15:20,416:INFO:Copying training dataset
+2023-07-20 21:15:20,452:INFO:Defining folds
+2023-07-20 21:15:20,452:INFO:Declaring metric variables
+2023-07-20 21:15:20,463:INFO:Importing untrained model
+2023-07-20 21:15:20,478:INFO:Light Gradient Boosting Machine Imported successfully
+2023-07-20 21:15:20,502:INFO:Starting cross validation
+2023-07-20 21:15:20,519:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-07-20 21:15:36,768:INFO:Calculating mean and std
+2023-07-20 21:15:36,769:INFO:Creating metrics dataframe
+2023-07-20 21:15:37,885:INFO:Uploading results into container
+2023-07-20 21:15:37,887:INFO:Uploading model into container now
+2023-07-20 21:15:37,889:INFO:_master_model_container: 13
+2023-07-20 21:15:37,889:INFO:_display_container: 2
+2023-07-20 21:15:37,891:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=2020, reg_alpha=0.0, reg_lambda=0.0, silent='warn',
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+2023-07-20 21:15:37,891:INFO:create_model() successfully completed......................................
+2023-07-20 21:15:37,999:INFO:SubProcess create_model() end ==================================
+2023-07-20 21:15:37,999:INFO:Creating metrics dataframe
+2023-07-20 21:15:38,028:INFO:Initializing Dummy Classifier
+2023-07-20 21:15:38,028:INFO:Total runtime is 7.674794526894886 minutes
+2023-07-20 21:15:38,036:INFO:SubProcess create_model() called ==================================
+2023-07-20 21:15:38,036:INFO:Initializing create_model()
+2023-07-20 21:15:38,036:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018DFB017F10>, estimator=dummy, fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000018DE62B06A0>, model_only=True, return_train_score=False, kwargs={})
+2023-07-20 21:15:38,037:INFO:Checking exceptions
+2023-07-20 21:15:38,038:INFO:Importing libraries
+2023-07-20 21:15:38,038:INFO:Copying training dataset
+2023-07-20 21:15:38,074:INFO:Defining folds
+2023-07-20 21:15:38,074:INFO:Declaring metric variables
+2023-07-20 21:15:38,088:INFO:Importing untrained model
+2023-07-20 21:15:38,102:INFO:Dummy Classifier Imported successfully
+2023-07-20 21:15:38,128:INFO:Starting cross validation
+2023-07-20 21:15:38,149:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2023-07-20 21:15:40,814:WARNING:c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-07-20 21:15:40,831:WARNING:c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-07-20 21:15:40,834:WARNING:c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-07-20 21:15:40,840:WARNING:c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-07-20 21:15:40,841:WARNING:c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-07-20 21:15:40,852:WARNING:c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-07-20 21:15:41,028:WARNING:c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-07-20 21:15:41,144:WARNING:c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-07-20 21:15:44,492:WARNING:c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-07-20 21:15:44,602:WARNING:c:\Users\faisa\.pyenv\pyenv-win\versions\3.9.13\lib\site-packages\sklearn\metrics\_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-07-20 21:15:48,827:INFO:Calculating mean and std
+2023-07-20 21:15:48,830:INFO:Creating metrics dataframe
+2023-07-20 21:15:49,928:INFO:Uploading results into container
+2023-07-20 21:15:49,929:INFO:Uploading model into container now
+2023-07-20 21:15:49,930:INFO:_master_model_container: 14
+2023-07-20 21:15:49,930:INFO:_display_container: 2
+2023-07-20 21:15:49,930:INFO:DummyClassifier(constant=None, random_state=2020, strategy='prior')
+2023-07-20 21:15:49,931:INFO:create_model() successfully completed......................................
+2023-07-20 21:15:50,048:INFO:SubProcess create_model() end ==================================
+2023-07-20 21:15:50,048:INFO:Creating metrics dataframe
+2023-07-20 21:15:50,103:INFO:Initializing create_model()
+2023-07-20 21:15:50,104:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018DFB017F10>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=2020, reg_alpha=0.0, reg_lambda=0.0, silent='warn',
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2023-07-20 21:15:50,104:INFO:Checking exceptions
+2023-07-20 21:15:50,108:INFO:Importing libraries
+2023-07-20 21:15:50,108:INFO:Copying training dataset
+2023-07-20 21:15:50,151:INFO:Defining folds
+2023-07-20 21:15:50,151:INFO:Declaring metric variables
+2023-07-20 21:15:50,152:INFO:Importing untrained model
+2023-07-20 21:15:50,152:INFO:Declaring custom model
+2023-07-20 21:15:50,153:INFO:Light Gradient Boosting Machine Imported successfully
+2023-07-20 21:15:50,171:INFO:Cross validation set to False
+2023-07-20 21:15:50,172:INFO:Fitting Model
+2023-07-20 21:15:52,876:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=2020, reg_alpha=0.0, reg_lambda=0.0, silent='warn',
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+2023-07-20 21:15:52,876:INFO:create_model() successfully completed......................................
+2023-07-20 21:15:53,054:INFO:_master_model_container: 14
+2023-07-20 21:15:53,055:INFO:_display_container: 2
+2023-07-20 21:15:53,058:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=2020, reg_alpha=0.0, reg_lambda=0.0, silent='warn',
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+2023-07-20 21:15:53,058:INFO:compare_models() successfully completed......................................
