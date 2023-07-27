@@ -218,3 +218,30 @@ def boxlots_custom(dataset, columns_list, rows, cols, suptitle,size=(20,16)):
             axs[i].set_ylabel('Count')
         sns.boxplot(data=dataset[data], orient='v', ax=axs[i])
         axs[i].set_title(data)
+
+def countplots_custom(dataset, columns_list, rows, cols, suptitle,size=(20,16)):
+    """Function to make seaborn count plot of all of columns. To see the distribution of the discrete variable
+
+    Args:
+        dataset : DataFrame
+        columns_list (string) : numerical columns
+        rows : number of rows of axes
+        cols : number of cols of axes
+        suptitle : title of the plots
+        size : size of canvas
+
+    Return:
+        histogram plot
+
+    """
+    import matplotlib.pyplot as plt
+    import seaborn as sns
+
+    fig, axs = plt.subplots(rows, cols,  figsize=size)
+    fig.suptitle(suptitle,y=0.93, size=16)
+    axs = axs.flatten()
+    for i, data in enumerate(columns_list):
+        if i % cols == 0:
+            axs[i].set_ylabel('Count')
+        sns.countplot(data=dataset, x=data, ax=axs[i])
+        axs[i].set_title(data)
