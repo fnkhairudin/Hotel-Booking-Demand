@@ -14,3 +14,5 @@ Menjelaskan tentang apa (cerita) ??? Apakah Goal bisa tercapai ?
 Numerical dihubungkan dengan scatter plot (multivariate), atau ada pola regresi ?
 
 Prediksi batal atau tidak diluar dari faktor yang tidak bisa dikontrol seperti sakit, kecelakaan, jadwal pelanggan yang berubah, bencana alam, dan lain sebagainya.
+
+kolom country dilakukan ignore feature disetup
