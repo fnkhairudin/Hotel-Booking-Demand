@@ -4,3 +4,15 @@ In the hospitality industry (rooms division), revenue
 management general definition was adapted to “making the right
 room available for the right guest and the right price at the right
 time via the right distribution channel”
+
+bikin pipeline untuk masing2 model, disesuaikan perlakuannya, kemudian masukkan ke dalam compare_model(include=pipeline1, pipeline2, dst)
+
+Data Understanding:
+Apakah feature2 termasuk penyebab pembatalan pemesanan ?
+data.info() gak perlu, data.describe() aja
+Menjelaskan tentang apa (cerita) ??? Apakah Goal bisa tercapai ?
+Numerical dihubungkan dengan scatter plot (multivariate), atau ada pola regresi ?
+
+Prediksi batal atau tidak diluar dari faktor yang tidak bisa dikontrol seperti sakit, kecelakaan, jadwal pelanggan yang berubah, bencana alam, dan lain sebagainya.
+
+kolom country dilakukan ignore feature disetup
