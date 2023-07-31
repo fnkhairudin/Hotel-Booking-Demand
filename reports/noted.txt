@@ -18,3 +18,11 @@ Prediksi batal atau tidak diluar dari faktor yang tidak bisa dikontrol seperti s
 kolom country dilakukan ignore feature disetup
 
 Sklearn Pipeline
+
+Transparansi Model (Kenapa dia bisa dikategorikan sebagai canceled booking)
+
+Kesimpulan: jika menggunakan atau tidak menggunakan model
+
+Goal : Tambahkan mau berapa persen metriknya
+
+Data Preparation : Summary apa saja yang dilakukan
