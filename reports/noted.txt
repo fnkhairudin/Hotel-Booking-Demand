@@ -26,3 +26,8 @@ Kesimpulan: jika menggunakan atau tidak menggunakan model
 Goal : Tambahkan mau berapa persen metriknya
 
 Data Preparation : Summary apa saja yang dilakukan
+
+MCC --> Tuning, Feature engineering, feature selection
+
+7. Explain based (prototype, critism)
+Data tanpa outlier, plot PCA dengan explain variance ratio terbesar, jika memungkinkan 2D, maksimal 3D 
