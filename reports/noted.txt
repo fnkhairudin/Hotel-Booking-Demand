@@ -30,4 +30,8 @@ Data Preparation : Summary apa saja yang dilakukan
 MCC --> Tuning, Feature engineering, feature selection
 
 7. Explain based (prototype, critism)
-Data tanpa outlier, plot PCA dengan explain variance ratio terbesar, jika memungkinkan 2D, maksimal 3D 
+Data tanpa outlier, plot PCA dengan explain variance ratio terbesar, jika memungkinkan 2D, maksimal 3D
+
+Feature Engineering --> cek korelasi antar kolom, kalau yang tinggi mungkin bisa didrop salah satu, karena bersifat redundant
+
+Discret value gak perlu scaling ulang, karena diperlakukan seperti categorical
