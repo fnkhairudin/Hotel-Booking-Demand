@@ -35,3 +35,33 @@ Data tanpa outlier, plot PCA dengan explain variance ratio terbesar, jika memung
 Feature Engineering --> cek korelasi antar kolom, kalau yang tinggi mungkin bisa didrop salah satu, karena bersifat redundant
 
 Discret value gak perlu scaling ulang, karena diperlakukan seperti categorical
+
+### FEATURE SELECTION ###
+nowadays, a big part of these cancellations occur because of deal-seeking customers who are determined in the search for best deals. (meal)
+
+Acting  on  bookings  marked  with  a  high probability  of  being  canceled  should  occur  in  the  time  gap between the  time the booking is  placed at the hotel and the expected arrival date. (lead_time)
+
+it  is possible  to  see that  most cancellations were made by  guests  who  had  already  had  one  previous cancellation and also had less than 5 non canceled bookings. It was also possible to see that customers with a high number of previous  bookings at  the hotel, rarely  canceled. Yet,  the maximum  number  of  cancellations  per  guest  or  previous bookings are different in each hotel. (previous_cancellations)
+
+In Figure 4 it is possible to  verify  that  the type of customer (contract, group, transient or transient-party) and the deposit type  made  by them  to guarantee  the booking  (no deposit, non-refundable/paid totally  in advance  or partially paid)  as also different behaviors in terms of cancellations. (Repeated Guest)
+
+WasInWaitingList (Binary value indicating if the guest was in a waiting list prior to confirmed availability and to being confirmed as an effective booking (0: no; 1: yes))
+
+cancellation ratios ??
+
+“ReservedRoomType” and “AssignedRoomType” did not seem to have any correlation to booking cancellations.
+
+Higher numbers of “Adults” and “Children” in some of the hotels, were related to higher numbers in “RoomsQuantity” and canceled bookings. Finally, it was also verified that some variables were not used in some of the hotels, such as “MarketSegment,” “RequiredCarParkingSpaces,” “TotalOfSpecialRequests,” and “DaysInWaitingList.”
+
+# Feature selection based on paper (PreviousCancellationRates)
+Based on the additional information provided by the
+application of the chosen filter and the results of tests on the
+computational power required for the model, it was decided to
+remove the variables “BookingDateDayOfWeek” and
+“ArrivalDateDayOfWeek.” The columns
+“PreviousBookingsNotCanceled,” “PreviousCancellations,” and
+“PreviousStays” were also removed from all data sets and
+substituted with a derived feature called
+“PREPPreviousCancellationRatio” that was calculated by
+dividing “PreviousCancellations” by the sum of
+“PreviousBookingsNotCanceled” with “PreviousCancellations.”
